@@ -1,0 +1,41 @@
+.header, .nav> ul, .main, .sidebar, .advertise, .footer{
+    background-color: rgb(255, 207, 111);
+    border: 2px solid tomato;
+    border-radius: 5px;
+    padding: 10px;
+}
+.nav>ul{
+    list-style: none;
+}
+.header{
+    grid-area: header;
+}
+.nav ul{
+    grid-area: nav;
+}
+.main{
+    grid-area: main;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.advertise{
+    grid-area: advertise;
+}
+.footer{
+    grid-area: footer;
+}
+section{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "header     header      header      header"
+    "nav        main        main        sidebar"
+    "nav        main        main        advertise"
+    "footer     footer      footer      footer"
+    ;
+}
+/* .container{
+    display: flex;
+    justify-content: center;
+} */
